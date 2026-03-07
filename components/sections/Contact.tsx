@@ -61,7 +61,7 @@ export default function Contact() {
                         {/* Contact details */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 48 }}>
                             {[
-                                { icon: '📧', label: 'contact@ompatil.com', href: 'mailto:contact@ompatil.com' },
+                                { icon: '📧', label: 'aryanpatilofficial77@gmail.com', href: 'mailto:aryanpatilofficial77@gmail.com' },
                                 { icon: '📍', label: 'India (Remote Worldwide)', href: '#' },
                                 { icon: '⏰', label: 'Response within 24h', href: '#' },
                             ].map(item => (

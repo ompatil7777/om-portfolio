@@ -29,8 +29,8 @@ files.forEach(f => {
             .replace(/ARYAN/g, 'OMPatil') // just OM might look small, let's use OM PATIL or OM depending... wait, "ARYAN" is in LoadingScreen as 'ARYAN PORTFOLIO' and in Hero. Let's make it OM PATIL
             .replace(/om-portfolio/g, 'om-portfolio')
             .replace(/Om's/g, "Om's")
-            .replace(/om@email\.com/g, 'contact@ompatil.com')
-            .replace(/linkedin\.com\/in\/om/g, 'linkedin.com/in/ompatil')
+            .replace(/om@email\.com/g, 'aryanpatilofficial77@gmail.com')
+            .replace(/linkedin\.com\/in\/om/g, 'linkedin.com/in/om-patil-43712724b')
             .replace(/github\.com\/om/g, 'github.com/ompatil7777')
             .replace(/om\.dev/g, 'ompatil.com');
 

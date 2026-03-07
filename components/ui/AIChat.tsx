@@ -12,7 +12,7 @@ const SUGGESTED = [
 const AI_RESPONSES: Record<string, string> = {
     project: "Om has built some impressive projects:\n\n🤖 **Virtual Jarvis Assistant** — AI-powered voice assistant on AWS\n👟 **Shoe E-Commerce** — Full-stack with Next.js, Stripe & Redis\n📈 **Stock Price Tracker** — Real-time Go backend + WebSockets\n⚙️ **DevOps Automation Suite** — K8s + Terraform + ArgoCD",
     stack: "Om's core tech stack:\n\n☁️ **Cloud:** AWS (ECS, Lambda, RDS, S3, CloudFront)\n🐳 **DevOps:** Docker, Kubernetes, Terraform, ArgoCD\n🐹 **Backend:** Golang, Node.js, REST APIs\n🔐 **Security:** IAM, VPC, WAF, KMS, zero-trust",
-    hire: "Yes! Om is currently available for:\n\n✅ **Freelance projects** (cloud, DevOps, backend)\n✅ **Full-time roles** (cloud-native, platform engineering)\n\nReach out at: contact@ompatil.com\n\nResponse time: within 24 hours 🚀",
+    hire: "Yes! Om is currently available for:\n\n✅ **Freelance projects** (cloud, DevOps, backend)\n✅ **Full-time roles** (cloud-native, platform engineering)\n\nReach out at: aryanpatilofficial77@gmail.com\n\nResponse time: within 24 hours 🚀",
     devops: "The **DevOps Automation Suite** is Om's flagship project:\n\n• End-to-end Terraform IaC for AWS\n• GitHub Actions CI + ArgoCD GitOps CD\n• Prometheus + Grafana observability stack\n• Zero to production in under 10 minutes\n• Multi-region, blue/green deployments",
 }
 
@@ -23,7 +23,7 @@ function getResponse(msg: string): string {
     if (lower.includes('hire') || lower.includes('available') || lower.includes('job') || lower.includes('work')) return AI_RESPONSES.hire
     if (lower.includes('devops') || lower.includes('automation') || lower.includes('kubernetes')) return AI_RESPONSES.devops
     if (lower.includes('hello') || lower.includes('hi') || lower.includes('hey')) return "Hey there! 👋 I'm Om's portfolio assistant. Ask me about his projects, skills, or availability!"
-    if (lower.includes('contact') || lower.includes('email')) return "You can reach Om at:\n📧 contact@ompatil.com\n💼 linkedin.com/in/ompatil\n🐙 github.com/ompatil7777"
+    if (lower.includes('contact') || lower.includes('email')) return "You can reach Om at:\n📧 aryanpatilofficial77@gmail.com\n💼 linkedin.com/in/om-patil-43712724b\n🐙 github.com/ompatil7777"
     return "I can tell you about Om's projects, tech stack, and availability. Try asking:\n\n• 'What projects has Om built?'\n• 'What's his tech stack?'\n• 'Is he available for hire?'"
 }
 

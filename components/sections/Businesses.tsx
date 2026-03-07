@@ -19,7 +19,7 @@ const BUSINESSES = [
         icon: '🏢',
         color: '#00D4FF',
         metrics: ['Residential', 'Commercial', 'Consulting'],
-        link: '#',
+        link: '/urban-nest',
     },
     {
         name: 'CloudCraft Digital',
@@ -28,7 +28,7 @@ const BUSINESSES = [
         icon: '⚡',
         color: '#7B2FFF',
         metrics: ['Web Dev', 'Automation', 'Cloud Setup'],
-        link: '#',
+        link: '/cloudcraft',
     },
 ]
 

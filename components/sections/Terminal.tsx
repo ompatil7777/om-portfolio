@@ -32,16 +32,16 @@ const COMMAND_RESPONSES: Record<string, string> = {
   <span class="highlight">[2]</span> Shoe E-Commerce Platform    → Full Stack
   <span class="highlight">[3]</span> Stock Price Tracker         → Real-time + Go
   <span class="highlight">[4]</span> DevOps Automation Suite     → K8s + Terraform`,
-    contact: `📧  <span class="cmd">contact@ompatil.com</span>
+    contact: `📧  <span class="cmd">aryanpatilofficial77@gmail.com</span>
   🐙  <span class="cmd">github.com/ompatil7777</span>
-  💼  <span class="cmd">linkedin.com/in/ompatil</span>`,
+  💼  <span class="cmd">linkedin.com/in/om-patil-43712724b</span>`,
     resume: `<span class="success">Downloading resume...</span>
   ████████████████████ 100%
   ✅ resume.pdf downloaded successfully`,
     'hire me': `<span class="success">✅ Excellent choice.</span> Running background checks...
   ████████████████████ 100%
   <span class="success">Status: HIGHLY RECOMMENDED</span>
-  Let's build something great! → contact@ompatil.com`,
+  Let's build something great! → aryanpatilofficial77@gmail.com`,
 }
 
 const AUTOCOMPLETE = ['help', 'about', 'whoami', 'skills', 'projects', 'contact', 'resume', 'clear', 'hire me']
