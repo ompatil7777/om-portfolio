@@ -13,13 +13,13 @@ function useInView(ref: React.RefObject<Element | null>) {
     return inView
 }
 
-const ORBIT_RADII = { 1: 110, 2: 180, 3: 255 }
-const ORBIT_SPEEDS = { 1: 0.0006, 2: 0.0004, 3: 0.00025 }
+const ORBIT_RADII: Record<number, number> = { 1: 110, 2: 180, 3: 255 }
+const ORBIT_SPEEDS: Record<number, number> = { 1: 0.0006, 2: 0.0004, 3: 0.00025 }
 
 export default function Skills() {
     const sectionRef = useRef<HTMLElement>(null)
     const inView = useInView(sectionRef)
-    const animRef = useRef<number>()
+    const animRef = useRef<number>(0)
     const anglesRef = useRef<Record<string, number>>({})
     const [tooltip, setTooltip] = useState<Skill | null>(null)
     const [paused, setPaused] = useState(false)

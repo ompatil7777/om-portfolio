@@ -17,7 +17,7 @@ export default function CloudArchitecture() {
     const inView = useInView(sectionRef)
     const [hoveredNode, setHoveredNode] = useState<string | null>(null)
     const [packets, setPackets] = useState<Array<{ id: number; edge: number; t: number }>>([])
-    const animRef = useRef<number>()
+    const animRef = useRef<number>(0)
     const packetId = useRef(0)
 
     const NODE_DESCRIPTIONS: Record<string, string> = {
@@ -129,7 +129,6 @@ export default function CloudArchitecture() {
                                     position: 'absolute',
                                     left: `${node.x}%`,
                                     top: `${node.y}%`,
-                                    transform: 'translate(-50%, -50%)',
                                     background: hoveredNode === node.id
                                         ? `rgba(${parseInt(node.color.slice(1, 3), 16)}, ${parseInt(node.color.slice(3, 5), 16)}, ${parseInt(node.color.slice(5, 7), 16)}, 0.15)`
                                         : 'rgba(10, 14, 26, 0.95)',

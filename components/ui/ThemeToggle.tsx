@@ -35,7 +35,6 @@ export default function ThemeToggle() {
             onClick={toggle}
             onMouseDown={onMouseDown}
             onMouseUp={onMouseUp}
-            onMouseLeave={onMouseUp}
             title={dark ? 'Switch to Light Mode' : 'Switch to Dark Mode (hold 3s for CRT mode 👾)'}
             style={{
                 width: 40, height: 40,
