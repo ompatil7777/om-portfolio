@@ -359,54 +359,55 @@ body.loading {
 }
 
 /* Custom cursor */
-.cursor-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--neon-blue);
-  border-radius: 50%;
+/* Custom Anime Cursor */
+.anime-cursor {
   position: fixed;
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.05s;
-  box-shadow: 0 0 8px var(--neon-blue);
+  z-index: 999999;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 200, 0.6));
 }
 
-.cursor-ring {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid var(--neon-blue);
+.shuriken-svg {
+  animation: spin 4s linear infinite;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.anime-cursor.hovering .shuriken-svg {
+  animation: spin 0.5s linear infinite;
+  transform: scale(1.4);
+  filter: drop-shadow(0 0 12px rgba(123, 47, 255, 0.8));
+}
+
+.anime-cursor.hovering .shuriken-svg path {
+  fill: var(--neon-violet);
+}
+
+.anime-cursor.hovering .shuriken-svg circle {
+  stroke: var(--neon-violet);
+}
+
+.cursor-glow {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(0, 255, 200, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
   pointer-events: none;
   z-index: 99998;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s, height 0.3s, border-color 0.3s, background 0.3s;
-  mix-blend-mode: screen;
+  will-change: transform;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.cursor-ring.hovering {
-  width: 60px;
-  height: 60px;
-  background: rgba(0, 212, 255, 0.1);
-  border-color: var(--neon-cyan);
-}
-
-.cursor-glow {
-  width: 120px;
-  height: 120px;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 99997;
-  transform: translate(-50%, -50%);
+body:hover .anime-cursor.hovering~.cursor-glow {
+  background: radial-gradient(circle, rgba(123, 47, 255, 0.2) 0%, transparent 70%);
 }
 
 /* Scroll progress */

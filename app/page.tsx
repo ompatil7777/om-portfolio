@@ -16,8 +16,6 @@ import OpenSource from '@/components/sections/OpenSource'
 import Businesses from '@/components/sections/Businesses'
 
 // Lazy load client-only / heavy components
-const CustomCursor = dynamic(() => import('@/components/ui/CustomCursor'), { ssr: false })
-const CursorTrail = dynamic(() => import('@/components/ui/CursorTrail'), { ssr: false })
 const LoadingScreen = dynamic(() => import('@/components/ui/LoadingScreen'), { ssr: false })
 const ScrollProgress = dynamic(() => import('@/components/ui/ScrollProgress'), { ssr: false })
 const AIChat = dynamic(() => import('@/components/ui/AIChat'), { ssr: false })
@@ -35,8 +33,6 @@ export default function Home() {
     <>
       {/* Global UI layer */}
       <SmoothScroll />
-      <CustomCursor />
-      <CursorTrail />
       <ScrollProgress />
       <LoadingScreen onComplete={handleLoadComplete} />
       <AIChat />
